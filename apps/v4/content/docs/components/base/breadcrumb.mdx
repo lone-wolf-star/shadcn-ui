@@ -1,8 +1,10 @@
 ---
 title: Breadcrumb
-description: Displays the path to the current resource using a hierarchy of links.
+description: |
+  Displays the path to the current resource using a hierarchy of links.
 base: base
 component: true
+
 ---
 
 <ComponentPreview
@@ -15,11 +17,11 @@ component: true
 
 <CodeTabs>
 
-<TabsList>
-  <TabsTrigger value="cli">Command</TabsTrigger>
-  <TabsTrigger value="manual">Manual</TabsTrigger>
-</TabsList>
-<TabsContent value="cli">
+  <TabsList>
+    <TabsTrigger value="cli">Command</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
 
 ```bash
 npx shadcn@latest add breadcrumb
@@ -29,19 +31,19 @@ npx shadcn@latest add breadcrumb
 
 <TabsContent value="manual">
 
-<Steps className="mb-0 pt-2">
+  <Steps className="mb-0 pt-2">
 
-<Step>Copy and paste the following code into your project.</Step>
+    <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource
-  name="breadcrumb"
-  title="components/ui/breadcrumb.tsx"
-  styleName="base-nova"
-/>
+    <ComponentSource
+    name="breadcrumb"
+    title="components/ui/breadcrumb.tsx"
+    styleName="base-nova"
+    />
 
-<Step>Update the import paths to match your project setup.</Step>
+    <Step>Update the import paths to match your project setup.</Step>
 
-</Steps>
+  </Steps>
 
 </TabsContent>
 
@@ -49,7 +51,7 @@ npx shadcn@latest add breadcrumb
 
 ## Usage
 
-```tsx showLineNumbers
+```tsx
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -60,7 +62,7 @@ import {
 } from "@/components/ui/breadcrumb"
 ```
 
-```tsx showLineNumbers
+```tsx
 <Breadcrumb>
   <BreadcrumbList>
     <BreadcrumbItem>
@@ -90,29 +92,49 @@ A basic breadcrumb with a home link and a components link.
 
 ### Custom separator
 
-Use a custom component as `children` for `<BreadcrumbSeparator />` to create a custom separator.
+Use a custom component as \`children\` for \`
+
+<BreadcrumbSeparator />
+
+\` to create a custom separator.
 
 <ComponentPreview styleName="base-nova" name="breadcrumb-separator" />
 
 ### Dropdown
 
-You can compose `<BreadcrumbItem />` with a `<DropdownMenu />` to create a dropdown in the breadcrumb.
+You can compose \`
+
+<BreadcrumbItem />
+
+\` with a \`
+
+<DropdownMenu />
+
+\` to create a dropdown in the breadcrumb.
 
 <ComponentPreview styleName="base-nova" name="breadcrumb-dropdown" />
 
 ### Collapsed
 
-We provide a `<BreadcrumbEllipsis />` component to show a collapsed state when the breadcrumb is too long.
+We provide a \`
+
+<BreadcrumbEllipsis />
+
+\` component to show a collapsed state when the breadcrumb is too long.
 
 <ComponentPreview
-  styleName="base-nova"
-  name="breadcrumb-ellipsis"
-  previewClassName="p-2"
+styleName="base-nova"
+name="breadcrumb-ellipsis"
+previewClassName="p-2"
 />
 
 ### Link component
 
-To use a custom link component from your routing library, you can use the `render` prop on `<BreadcrumbLink />`.
+To use a custom link component from your routing library, you can use the \`render\` prop on \`
+
+<BreadcrumbLink />
+
+\`.
 
 <ComponentPreview styleName="base-nova" name="breadcrumb-link" />
 
@@ -121,10 +143,10 @@ To use a custom link component from your routing library, you can use the `rende
 To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
 
 <ComponentPreview
-  styleName="base-nova"
-  name="breadcrumb-rtl"
-  direction="rtl"
-  previewClassName="p-2"
+styleName="base-nova"
+name="breadcrumb-rtl"
+direction="rtl"
+previewClassName="p-2"
 />
 
 ## API Reference
@@ -185,3 +207,5 @@ The `BreadcrumbEllipsis` component displays an ellipsis indicator for collapsed 
 | Prop        | Type     | Default |
 | ----------- | -------- | ------- |
 | `className` | `string` | -       |
+
+​
