@@ -1,29 +1,31 @@
 ---
-title: Alert Dialog
-description: A modal dialog that interrupts the user with important content and expects a response.
+title: Alert Dialogs
+description: |
+  A modal dialog that interrupts the user with important content and expects a response.
 featured: true
 base: radix
 component: true
 links:
   doc: https://www.radix-ui.com/primitives/docs/components/alert-dialog
   api: https://www.radix-ui.com/primitives/docs/components/alert-dialog#api-reference
+
 ---
 
 <ComponentPreview
-  name="alert-dialog-demo"
-  styleName="radix-nova"
-  previewClassName="h-56"
+name="alert-dialog-demo"
+styleName="radix-nova"
+previewClassName="h-56"
 />
 
 ## Installation
 
 <CodeTabs>
 
-<TabsList>
-  <TabsTrigger value="cli">Command</TabsTrigger>
-  <TabsTrigger value="manual">Manual</TabsTrigger>
-</TabsList>
-<TabsContent value="cli">
+  <TabsList>
+    <TabsTrigger value="cli">Command</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
 
 ```bash
 npx shadcn@latest add alert-dialog
@@ -33,9 +35,9 @@ npx shadcn@latest add alert-dialog
 
 <TabsContent value="manual">
 
-<Steps className="mb-0 pt-2">
+  <Steps className="mb-0 pt-2">
 
-<Step>Install the following dependencies:</Step>
+    <Step>Install the following dependencies:</Step>
 
 ```bash
 npm install radix-ui
@@ -44,9 +46,9 @@ npm install radix-ui
 <Step>Copy and paste the following code into your project.</Step>
 
 <ComponentSource
-  name="alert-dialog"
-  title="components/ui/alert-dialog.tsx"
-  styleName="radix-nova"
+name="alert-dialog"
+title="components/ui/alert-dialog.tsx"
+styleName="radix-nova"
 />
 
 <Step>Update the import paths to match your project setup.</Step>
@@ -59,7 +61,7 @@ npm install radix-ui
 
 ## Usage
 
-```tsx showLineNumbers
+```tsx
 import {
   AlertDialog,
   AlertDialogAction,
@@ -73,7 +75,7 @@ import {
 } from "@/components/ui/alert-dialog"
 ```
 
-```tsx showLineNumbers
+```tsx
 <AlertDialog>
   <AlertDialogTrigger asChild>
     <Button variant="outline">Show Dialog</Button>
@@ -101,9 +103,9 @@ import {
 A basic alert dialog with a title, description, and cancel and continue buttons.
 
 <ComponentPreview
-  name="alert-dialog-basic"
-  styleName="radix-nova"
-  previewClassName="h-56"
+name="alert-dialog-basic"
+styleName="radix-nova"
+previewClassName="h-56"
 />
 
 ### Small
@@ -111,9 +113,9 @@ A basic alert dialog with a title, description, and cancel and continue buttons.
 Use the `size="sm"` prop to make the alert dialog smaller.
 
 <ComponentPreview
-  name="alert-dialog-small"
-  styleName="radix-nova"
-  previewClassName="h-56"
+name="alert-dialog-small"
+styleName="radix-nova"
+previewClassName="h-56"
 />
 
 ### Media
@@ -121,9 +123,9 @@ Use the `size="sm"` prop to make the alert dialog smaller.
 Use the `AlertDialogMedia` component to add a media element such as an icon or image to the alert dialog.
 
 <ComponentPreview
-  name="alert-dialog-media"
-  styleName="radix-nova"
-  previewClassName="h-56"
+name="alert-dialog-media"
+styleName="radix-nova"
+previewClassName="h-56"
 />
 
 ### Small with Media
@@ -131,9 +133,9 @@ Use the `AlertDialogMedia` component to add a media element such as an icon or i
 Use the `size="sm"` prop to make the alert dialog smaller and the `AlertDialogMedia` component to add a media element such as an icon or image to the alert dialog.
 
 <ComponentPreview
-  name="alert-dialog-small-media"
-  styleName="radix-nova"
-  previewClassName="h-56"
+name="alert-dialog-small-media"
+styleName="radix-nova"
+previewClassName="h-56"
 />
 
 ### Destructive
@@ -141,9 +143,9 @@ Use the `size="sm"` prop to make the alert dialog smaller and the `AlertDialogMe
 Use the `AlertDialogAction` component to add a destructive action button to the alert dialog.
 
 <ComponentPreview
-  name="alert-dialog-destructive"
-  styleName="radix-nova"
-  previewClassName="h-56"
+name="alert-dialog-destructive"
+styleName="radix-nova"
+previewClassName="h-56"
 />
 
 ## RTL
@@ -151,10 +153,10 @@ Use the `AlertDialogAction` component to add a destructive action button to the 
 To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
 
 <ComponentPreview
-  styleName="radix-nova"
-  name="alert-dialog-rtl"
-  direction="rtl"
-  previewClassName="h-56"
+styleName="radix-nova"
+name="alert-dialog-rtl"
+direction="rtl"
+previewClassName="h-56"
 />
 
 ## API Reference
