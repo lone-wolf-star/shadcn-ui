@@ -1,7 +1,7 @@
 ---
 version: "1"
-website_url: https://ui.shadcn.com/
-media_path: /public/
+website_url: https://ui.shadcn.com
+media_path: ""
 ssg_framework: nextjs
 frontmatter_format: yaml
 publishing_mode: direct_publish
