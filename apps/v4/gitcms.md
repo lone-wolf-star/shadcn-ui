@@ -4,7 +4,7 @@ website_url: https://ui.shadcn.com/
 media_path: /public
 ssg_framework: nextjs
 frontmatter_format: yaml
-publishing_mode: direct_publish
+publishing_mode: editorial_workflow
 collections:
   - name: docs
     git_path: /content/docs/
