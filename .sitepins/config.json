@@ -1,0 +1,8 @@
+{
+  "content": "apps/v4/content/docs",
+  "media": "apps/v4/public",
+  "public": "static",
+  "configs": [],
+  "custom-commit": false,
+  "arrangement": []
+}
